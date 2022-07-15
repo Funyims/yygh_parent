@@ -1,4 +1,4 @@
-package com.funyims.yygh.hosp.config;
+package com.funyims.yygh.cmn.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
  * @date 2022/07/10 15:22
  */
 @Configuration
-@MapperScan("com.funyims.yygh.hosp.mapper")
-public class HospConfig {
+@MapperScan("com.funyims.yygh.cmn.mapper")
+public class CmnConfig {
     /**
      * 分页插件
      */

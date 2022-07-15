@@ -28,6 +28,7 @@ import static com.sun.xml.internal.ws.api.model.wsdl.WSDLBoundOperation.ANONYMOU
 @Api(tags = "医院设置管理")
 @RestController
 @RequestMapping("/admin/hosp/hospitalSet")
+@CrossOrigin
 public class HospitalSetController {
 
     //    注入service
@@ -155,7 +156,7 @@ public class HospitalSetController {
     //    7、批量删除医院设置
 //    [1,2]
     @ApiOperation(value = "批量删除医院设置")
-    @DeleteMapping("batchRemoveHospitalSet")
+    @DeleteMapping("batchRemove")
     public Result batchRemoveHospitalSet(
             @ApiParam(name = "idList", value = "批量ids", required = true)
             @RequestBody List<Long> idList) {
